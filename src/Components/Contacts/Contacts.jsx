@@ -1,4 +1,4 @@
-import s from "./Phonebook.module.css";
+import s from "../Phonebook.module.css";
 // import { useDispatch, useSelector } from "react-redux";
 
 // import {
@@ -46,10 +46,10 @@ import {
   deleteContacts,
   fetchContacts,
   getVisibleContacts,
-} from "../redux/phonebook/selectors";
+} from "../../redux/phonebook/selectors";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getIsLoggedIn } from "../redux/auth/auth-selectors";
+import { getIsLoggedIn } from "../../redux/auth/auth-selectors";
 
 export default function Contacts() {
   const contacts = useSelector(getVisibleContacts);

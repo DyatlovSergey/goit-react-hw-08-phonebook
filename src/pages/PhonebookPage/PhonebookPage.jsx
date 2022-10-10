@@ -1,5 +1,5 @@
-import Contacts from '../../Components/AddContacts/AddContacts';
-import Phonebook from '../../Components/Phonebook';
+import Contacts from '../../Components/Phonebook/Phonebook';
+import Phonebook from '../../Components/Contacts/Contacts';
 import Filter from '../../Components/Filter/Filter';
 
 export default function PhonebookPage() {
