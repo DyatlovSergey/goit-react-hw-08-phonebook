@@ -1,7 +1,7 @@
-import s from "./Phonebook.module.css";
+import s from "../Phonebook.module.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addContacts, getContacts } from "../Redux/selectors";
+import { addContacts, getContacts } from "../../redux/phonebook/selectors";
 import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 export default function Phonebook() {

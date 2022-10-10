@@ -1,9 +1,9 @@
-import s from "./Phonebook.module.css";
+import s from "../Phonebook.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getFilter } from "../Redux/selectors";
-import { filterChangeAction } from "../Redux/actions";
+import { getFilter } from "../../redux/phonebook/selectors";
+import { filterChangeAction } from "../../redux/phonebook/actions";
 
-const Filter = () => {
+export default function Filter() {
   const value = useSelector(getFilter);
   const dispatch = useDispatch();
   const onFilterChange = (event) =>
@@ -21,6 +21,6 @@ const Filter = () => {
       />
     </div>
   );
-};
+}
 
-export default Filter;
+// export default Filter;
