@@ -5,9 +5,11 @@ import Filter from '../../Components/Filter/Filter';
 export default function PhonebookPage() {
   return (
     <section>
-      <Phonebook />
-      <Filter />
       <Contacts />
+       <Filter />
+      <Phonebook />
+     
+    
     </section>
   );
 }

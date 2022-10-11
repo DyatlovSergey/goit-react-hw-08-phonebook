@@ -3,6 +3,7 @@ import s from './UserMenu.module.css';
 import { logout } from '../../redux/auth/auth-operations';
 import { useSelector } from 'react-redux';
 import { getUserName } from '../../redux/auth/auth-selectors';
+import b from "../Phonebook.module.css"
 
 export default function UserMenu() {
   const dispatch = useDispatch();
@@ -11,8 +12,8 @@ export default function UserMenu() {
   return (
     <div className={s.userMenuBox}>
       <h2 className={s.welcomeUser}>Welcome, {login}</h2>
-      <button type="button" className={s.logoutButton} onClick={() => dispatch(logout())}>
-        Logout
+      <button type="button" className={b.red_button} onClick={() => dispatch(logout())}>
+        <span>Logout</span>
       </button>
     </div>
   );

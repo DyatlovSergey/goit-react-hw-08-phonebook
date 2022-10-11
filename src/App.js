@@ -17,7 +17,7 @@ import s from "./Components/Phonebook.module.css";
 
 // import s from "./App.module.css";
 import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 
 import { Suspense, useEffect, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
@@ -58,12 +58,12 @@ const App = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />;
               <Route path="/phonebook" element={<PhonebookPage />} />;
-              <Route path="/signIn" element={<SignInPage />} />;
-              <Route path="/signUp" element={<SignUpPage />} />;
+              <Route path="/login" element={<SignInPage />} />;
+              <Route path="/register" element={<SignUpPage />} />;
             </Routes>
           </Suspense>
         </main>
-        <Footer className={s.footer} />
+        {/* <Footer className={s.footer} /> */}
       </div>
     )
   );

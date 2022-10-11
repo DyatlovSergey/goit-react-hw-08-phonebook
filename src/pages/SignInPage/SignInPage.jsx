@@ -72,7 +72,7 @@ export default function SignInPage() {
           />
         </div>
         <div className={s.buttonBox}>
-          <button className={s.addButton} type="submit">
+          <button className={s.button} type="submit">
             Sign-in
           </button>
         </div>

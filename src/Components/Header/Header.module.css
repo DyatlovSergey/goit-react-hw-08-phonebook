@@ -1,4 +1,4 @@
-.headerBox {
+/* .headerBox {
   margin-bottom: 40px;
   min-width: 75%;
   background-color: #faf5f5;
@@ -11,11 +11,19 @@
   background-color: #faf5f5;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
     23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
+} */
 
-.navigationBox {
+/* .navigationBox {
   display: grid;
   grid-template-columns: auto 1fr;
   min-width: 90%;
   justify-items: end;
+} */
+
+.navigationBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2a363b;
 }

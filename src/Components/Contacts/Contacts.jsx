@@ -73,14 +73,14 @@ export default function Contacts() {
 
   return (
     <ul className={s.phonebookList}>
-      {contacts.map(({ id, name, phone }) => (
+      {contacts.map(({ id, name, number }) => (
         <li className={s.contact__item} key={id}>
           <p className={s.contact__description}>
             <span className={s.contact__name}>{name}:</span>
-            <span>{phone}</span>
+            <span className={s.contact__name}>{number}</span>
           </p>
           <button
-            className={s.contact__delete}
+            className={s.red_button}
             onClick={() => onDeleteContactCard(id)}
           >
             <span>Delete</span>
