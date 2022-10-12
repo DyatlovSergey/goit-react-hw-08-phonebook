@@ -7,18 +7,9 @@ export default function HomePage() {
         Welcome to <span className={s.titlePart}>Phonebook</span>{" "}
       </h1>
       <p className={s.titleDescription}>
-        People use the contact book every day. They prefer to use them rather
-        than memorize phone numbers by heart, as it is very convenient to use.
-        For example mobile phone books where you just have to choose a name
-        person, click on it and it will be automatically made dialing a number.{" "}
+     We are glad to welcome you on the main page of our application. Using the phone book, you can easily add, search and delete your contacts. Anytime and anywhere you can always go and find the number you need and contact the person.{" "}
       </p>
-      <p className={s.titleDescription}>
-        The <span className={s.titlePart}>Phonebook</span> can be implemented
-        even within the company. Using the contact book, employees can call each
-        other in seconds. Remember the numbers or ask colleagues are not
-        required. Because all data will be stored in the electronic contact
-        book.
-      </p>
+     
     </>
   );
 }

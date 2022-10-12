@@ -1,4 +1,4 @@
-import s from "../Phonebook.module.css";
+import s from "./Filter.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getFilter } from "../../redux/phonebook/selectors";
 import { filterChangeAction } from "../../redux/phonebook/actions";
@@ -11,8 +11,8 @@ export default function Filter() {
 
   return (
     <div className={s.filter}>
-      <h2>Contacts</h2>
-      <label className={s.filter__label}>Find contacts by name: </label>
+      <h2 className={s.filter__head}>Find contact</h2>
+      <label className={s.filter__label}>Enter name:</label>
       <input
         className={s.filter__input}
         type="text"
@@ -22,5 +22,3 @@ export default function Filter() {
     </div>
   );
 }
-
-// export default Filter;

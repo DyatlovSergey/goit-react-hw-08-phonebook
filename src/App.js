@@ -1,45 +1,16 @@
-// import Contacts from "./Components/AddContacts/AddContacts";
-// import Phonebook from "./Components/Phonebook";
-// import Filter from "./Components/Filter/Filter";
 import s from "./Components/Phonebook.module.css";
-
-// const App = () => {
-//   return (
-//     <section className={s.container}>
-//       <Contacts />
-//       <Filter />
-//       <Phonebook />
-//     </section>
-//   );
-// };
-
-// export default App;
-
-// import s from "./App.module.css";
 import Header from "./Components/Header/Header";
-// import Footer from "./Components/Footer/Footer";
-
 import { Suspense, useEffect, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { refreshCurrentUser } from "./redux/auth/auth-operations";
 import { getIsLoading } from "./redux/auth/auth-selectors";
 
-const PhonebookPage = lazy(() =>
-  import(
-    "./pages/PhonebookPage/PhonebookPage" /* webpackChunkName: "phonebook-page" */
-  )
-);
-const HomePage = lazy(() =>
-  import("./pages/HomePage/HomePage" /* webpackChunkName: "home-page" */)
-);
-const SignInPage = lazy(() =>
-  import("./pages/SignInPage/SignInPage" /* webpackChunkName: "sign-in-page" */)
-);
+const PhonebookPage = lazy(() => import("./pages/PhonebookPage/PhonebookPage"));
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const SignInPage = lazy(() => import("./pages/SignInPage/SignInPage"));
 
-const SignUpPage = lazy(() =>
-  import("./pages/SignUpPage/SignUpPage" /* webpackChunkName: "sign-up-page" */)
-);
+const SignUpPage = lazy(() => import("./pages/SignUpPage/SignUpPage"));
 
 const App = () => {
   const dispatch = useDispatch();
@@ -51,7 +22,7 @@ const App = () => {
 
   return (
     !isLoading && (
-      <div className={s.wrapper}>
+      <div className={s.container}>
         <Header className={s.header} />
         <main className={(s.main, s.phonebookSection)}>
           <Suspense fallback={<h1>Loading...</h1>}>
@@ -63,7 +34,6 @@ const App = () => {
             </Routes>
           </Suspense>
         </main>
-        {/* <Footer className={s.footer} /> */}
       </div>
     )
   );

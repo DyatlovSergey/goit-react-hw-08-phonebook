@@ -26,7 +26,6 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
   padding: 15px 30px;
   text-align: center;
   border-radius: 20px;
@@ -38,7 +37,7 @@ p {
   display: flex;
   text-align: left;
   flex-direction: column;
-  width: 450px;
+  max-width: 450px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -64,7 +63,8 @@ p {
   cursor: pointer;
 }
 
-.green_button:hover {
+.green_button:hover,
+.green_button:focus {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -92,7 +92,11 @@ p {
 }
 
 .contact__description {
+  display: flex;
   margin: 10px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
 }
 
 .contact__name {
@@ -113,7 +117,6 @@ p {
 
   transition: all 0.5s;
   cursor: pointer;
-  /* margin: 5px; */
 }
 
 .red_button span {
@@ -139,4 +142,19 @@ p {
 .red_button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.new {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-right: 5px;
+}
+
+.section__head {
+  margin-bottom: 10px;
 }
