@@ -9,7 +9,6 @@ import { getIsLoading } from "./redux/auth/auth-selectors";
 const PhonebookPage = lazy(() => import("./pages/PhonebookPage/PhonebookPage"));
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const SignInPage = lazy(() => import("./pages/SignInPage/SignInPage"));
-
 const SignUpPage = lazy(() => import("./pages/SignUpPage/SignUpPage"));
 
 const App = () => {
